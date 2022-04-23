@@ -28,15 +28,26 @@ h1 {
 
 header {
     grid-area: header;
-    background-color: lightblue;
     height: 170px;
     
 }
 
-nav {
+#navigation {
+    border: 1px solid red;
     grid-area: nav;
     background-color: lightcoral;
     height: 70px;
+    display:inline-flexbox;
+    align-content: center;
+}
+
+ul{
+    border: 1px solid blue;
+    list-style: none;
+}
+
+li{
+    border: 1px solid green;
 }
 
 #a {
