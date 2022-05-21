@@ -11,17 +11,17 @@
         <ul>
             <li>
                 <label class="label" for="name">Name: </label>
-                <input class="input" type="text" id="name" name="name" placeholder="Enter Your Name" pattern="[a-zA-Z]+\s+[a-zA-Z]+[a-zA-Z]" title="must be: FirstName Lastname"><br>
+                <input class="input" type="text" id="name" name="name" placeholder="Enter Your Name" autocomplete="off" required pattern="[a-zA-Z]+\s+[a-zA-Z]+[a-zA-Z]" title="must be: FirstName Lastname"><br>
             </li>
             <li>
                 <label class="label" for="email">Email: </label>
-                <input class="input" type="text" id="email" name="email" placeholder="Enter Your Email" pattern="[a-zA-Z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="email must be in format characters@characters.domain"><br>
+                <input class="input" type="text" id="email" name="email" placeholder="Enter Your Email" autocomplete="off" required pattern="[a-zA-Z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="email must be in format characters@characters.domain"><br>
             </li>
             <li>
                 <label class="label" for="card">Card:  </label>
-                <input class="input" type="text" id="card" name="card" placeholder="Enter a Proxy Credit Card Number" required pattern="[0-9]{16}" title="Must contain 16 numbers"><br>
+                <input class="input" type="text" id="card" name="card" placeholder="Enter a Proxy Credit Card Number" autocomplete="off" required pattern="[0-9]{16}" title="card number must be 16 digits"><br>
             </li>
-            <button type="button" id="submit"> heelp</button>
+            <button type="button" id="submit">Submit</button>
 
     </ul>
     </form>

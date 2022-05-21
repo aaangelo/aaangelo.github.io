@@ -1,9 +1,6 @@
     function validate() {
         let value = document.getElementById('card').value;
-        // accept only digits, dashes or spaces
-            if (/[^0-9-\s]+/.test(value)) return false;
-        
-        // The Luhn Algorithm. It's so pretty.
+        // Luhn Algorithm check.
             var nCheck = 0, nDigit = 0, bEven = false;
             value = value.replace(/\D/g, "");
         
@@ -20,11 +17,34 @@
             }
         
             let b = (nCheck % 10) == 0;
-            console.log(b)
-
+            if (b){
+                alert('Thank You!')
+                location.reload()
+            } else {
+                alert('The card number is invalid, please check the digits.')
+            }
     }
 
+function namecheck(){
+ let name = document.getElementById('name').value
+ if(name === ""){
+    alert('Please enter your name')
+ }
+ }
+
+ function emailcheck(){
+     let email = document.getElementById('email').value
+     if(email === "")
+     alert('Please enter a valid email address')
+ }
+
+function doEverything(){
+    namecheck()
+    emailcheck()
+    validate()
+}
+
 function init(){
-    document.getElementById('submit').onclick = validate
+    document.getElementById('submit').onclick = doEverything
 }
 window.onload = init;

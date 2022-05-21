@@ -37,11 +37,15 @@ li{
     width: 16em
 }
 
-.input:valid {
+.input:valid{
     background-color: lightgreen;
 }
 
-input:invalid:focus {
+#card:valid {
+    background-color: white;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid{
     background-color: lightpink;
 }
 
@@ -52,5 +56,13 @@ input:invalid:focus {
     margin: 5px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+#submit:hover{
+    background-color: #f5569b;
+}
+
+#submit:active {
+    background-color: #700031;
 }
 
