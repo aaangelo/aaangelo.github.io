@@ -37,6 +37,14 @@ li{
     width: 16em
 }
 
+.input:valid {
+    background-color: lightgreen;
+}
+
+input:invalid:focus {
+    background-color: lightpink;
+}
+
 #submit{
     background-color: #e70064;
     border: 1px solid #3c3c3b;
