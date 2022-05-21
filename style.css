@@ -1,21 +1,48 @@
-#red {
-    color: red;
-}
-
-#blue {
-    color: blue;
-}
-
 body {
-    background-color: lightgreen;
+    font-family: 'Calibri', 'Trebuchet MS';
+    font-size: 16px;
+    min-height: 100vh;
+    margin: 0% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-div {
-    border: 1px solid red;
+form {
+    border: 3px solid #3c3c3b;
+    border-radius: 12%;
+    padding: 20px;
+    background-color: #89c82e;
+    display: flex;
+    padding-bottom: 5px;
+}
+
+ul{
     text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-      }
+    padding-left: 0%;
+    margin: auto;
+}
+
+li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.label {
+    padding-right: 6px;
+    justify-self: flex-start;
+}
+.input {
+    float: right;
+    width: 16em
+}
+
+#submit{
+    background-color: #e70064;
+    border: 1px solid #3c3c3b;
+    border-radius: 10%;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
