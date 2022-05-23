@@ -15,7 +15,7 @@
                 nCheck += nDigit;
                 bEven = !bEven;
             }
-        
+            //pop up alerts
             let b = (nCheck % 10) == 0;
             if (b){
                 alert('Thank You!')
@@ -24,14 +24,14 @@
                 alert('The card number is invalid, please check the digits.')
             }
     }
-
+//checks if a name has been entered
 function namecheck(){
  let name = document.getElementById('name').value
  if(name === ""){
     alert('Please enter your name')
  }
  }
-
+//checks if an email has been entered
  function emailcheck(){
      let email = document.getElementById('email').value
      if(email === "")
@@ -43,7 +43,7 @@ function doEverything(){
     emailcheck()
     validate()
 }
-
+//looks for submit to be clicked, then runs all checks
 function init(){
     document.getElementById('submit').onclick = doEverything
 }
